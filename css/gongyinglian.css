@@ -1,0 +1,81 @@
+body{
+    background: #f4f4f4;
+}
+a{
+    text-decoration: none;
+}
+
+p{
+    font-size: 12px;
+    line-height: 24px;
+    margin-top: 25px;
+    color:#5B5B5B;
+}
+.mian_product{
+    /*width: 1024px;*/
+    background: #fff;
+    margin: 0 auto;
+    /*overflow: hidden;*/
+    margin-top: 10px;
+}
+
+.mian_product .product_left{
+    /*float: left;*/
+    margin-left: 20px;
+}
+.mian_product .product_left_nav{
+    width: 200px;
+    font-size: 12px;
+}
+.mian_product .product_left_nav li{
+    line-height: 48px;
+     COLOR: #000000;
+    border-bottom: 1px dotted #ccc;
+    padding-left: 20px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+.mian_product .product_left_nav li a{
+    color: #2B4450;
+}
+.mian_product .product_left_nav li:first-child{
+    background: #004C98;
+}
+.mian_product .product_left_nav li:first-child a{
+    color: white;
+}
+.mian_product .product_left_nav li:hover{
+    background: #004C98;
+}
+.mian_product .product_left_nav li:hover a{
+    color: white;
+}
+.mian_product .product_left_nav li:last-child:hover{
+    background:white;
+
+}
+.mian_product .product_left_nav li:last-child{
+    border-bottom: none;
+}
+.mian_product .product_right{
+    /*float: left;*/
+    /*width: 725px;*/
+    margin-left: 77px;
+    margin-bottom: 40px;
+
+}
+.mian_product .product_right .h1_1{
+    border-bottom: 1px dotted #ccc;
+    font-size: 12px;
+    height: 36px;
+    line-height: 36px;
+    padding-left: 5px
+}
+.mian_product .product_right .h1_2{
+    color: #006699;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px
+}

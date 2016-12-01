@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/style-top.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/gongyinglian.css"/>
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/jquery.bootstrap.newsbox.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!--广告部分的js引用-->
+    <script type='text/javascript' src='js/jquery.particleground.min.js'></script>
+    <script type='text/javascript' src='js/demo.js'></script>
+
+
+    <title>零售分销方案</title>
+    <style>
+        a{
+            list-style: none;
+        }
+        .container{
+            width: 100%;
+        }
+        .container-main{
+            max-width: 1024px;
+            background: white;
+        }
+        /*logo*/
+        .navbar-brand img{
+            width: 135px;
+            height: 50px;
+            /*margin-top: -15px;*/
+            margin-right:75px ;
+        }
+        /*头部导航部分*/
+        .navbar{
+            margin-bottom: 0;
+            background: white;
+            border-bottom: 2px solid #503875;
+            -moz-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4);
+            -webkit-box-shadow:0px 3px 5px rgba(0, 0, 0, 0.4);
+            box-shadow:0px 3px 5px rgba(0, 0, 0, 0.4);
+
+        }
+        .navbar-nav>li{
+            padding: 12px 10px;
+        }
+        /*移动端样式*/
+        #bs-example-navbar-collapse-1{
+            /*background: black;*/
+            max-height: 400px;
+        }
+        #bs-example-navbar-collapse-1 ul>li>ul>li{
+            height: 50px;
+        }
+        /*广告部分样式*/
+        .header_bigimg{
+            /*height: 300px;*/
+        }
+        /*中间内容部分*/
+        .thumbnail{
+            border: none;
+        }
+        /*底部导航*/
+        .container-footer{
+            background: black;
+            margin-top: 50px;
+        }
+        /*底部移动端*/
+        /*.container-footer-mob .nav-stacked li a{*/
+        /*color: black;*/
+        /*}*/
+        .container-footer-mob .nav-stacked>li>ul>li{
+            background: white;
+            height: 25px;
+            line-height: 25px;
+            padding-left: 40px;
+        }
+        .menu_child{
+            display: none;
+        }
+        /*.container-footer-mob .nav-stacked>li:hover .menu_child{*/
+        /*display: block;*/
+        /*}*/
+        .container-footer-mob-ul{
+            background: black;
+        }
+        .container-footer-mob-ul .nav-stacked li a{
+            color: white;
+        }
+        /*当屏幕尺寸小于=964px时轮播图片的样式*/
+        @media screen and (max-width: 964px){
+
+            /*移动端广告图片*/
+            .header_bigimg{
+                display: none;
+            }
+            .et-slider-wrapper-next{
+                width: 100%;
+                height: 199px;
+                background-image: url(images/bgc_1.jpg);
+                background-repeat: no-repeat;
+                background-size:cover;
+            }
+            .header_bigimg{
+                height: 200px;
+            }
+            .izl-rmenu {
+                display: none;
+            }
+
+            /*中间部分*/
+            .mian_product_display{
+                display: none;
+            }
+            .mian_product .product_right{
+                margin-left: 0;
+            }
+            /*底部移动端隐藏*/
+            .container-footer{
+                display: none;
+            }
+        }
+        /*当屏幕尺寸大于=964px时轮播图片的样式*/
+        @media screen and (min-width: 964px){
+            .dropdown-menu{
+                display: none;
+            }
+            .dropdown:hover .dropdown-menu{
+                display: block;
+            }
+            .container-footer-mob{
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<!--导航部分-->
+<div class="container">
+    <div class="row">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/logocaise.png" alt=""/></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <!--首页-->
+                        <li class="active"><a href="index.html">首页</a></li>
+                        <!--产品-->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                产品 <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="product-gongyinglianpingtai.html">供应链平台</a></li>
+                                <li><a href="product-dinghuohuixitong.html">订货会系统</a></li>
+                                <li><a href="product-dinghuohuixitong.html">客户关系管理系统</a></li>
+                                <li><a href="product-qiche4sdianyewuxitong.html">汽车4S店业务系统</a></li>
+                                <li><a href="product-shujufenxipingtai.html">数据分析平台</a></li>
+                            </ul>
+                        </li>
+                        <!--服务-->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                服务 <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="serve-RJDZ.html">软件定制服务</a></li>
+                                <li><a href="serve-ITzcyfw.html">IT支持与维护</a></li>
+                                <li><a href="serve-ITzyfw.html">IT专业服务</a></li>
+                                <li><a href="serve-ERP.html">ERP实施与咨询服务</a></li>
+                                <li><a href="serve-zycsyjnzc.html">专业测试与性能支持服务</a></li>
+                            </ul>
+                        </li>
+                        <!--解决方案-->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                解决方案 <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="solution-oto-solution.html">OTO解决方案</a></li>
+                                <li><a href="solution-lsfxfa.html">零售分销方案</a></li>
+                                <li><a href="solution-dzhyjjfa.html">定制行业解决方案</a></li>
+                                <li><a href="solution-khgxjjfa.html">客户关系管理解决方案</a></li>
+                                <li><a href="solution-ycbgjjfa.html">远程办公解决方案</a></li>
+                            </ul>
+                        </li>
+                        <!--成功案例-->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                成功案例 <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="successful-jiaoyu.html">教育培训行业</a></li>
+                                <li><a href="successful-gongyinglian.html">供应链行业</a></li>
+                                <li><a href="successful-media.html">传媒</a></li>
+                                <li><a href="successful-chamber.html">商会</a></li>
+                                <li><a href="successful-internet.html">互联网行业</a></li>
+                                <li><a href="successful-weixin.html">微信平台</a></li>
+                            </ul>
+                        </li>
+                        <!--关于我们-->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                关于我们 <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="about-liaojieioio.html">了解佑佑</a></li>
+                                <li><a href="about-panter.html">合作伙伴</a></li>
+                                <li><a href="about-certificate.html">资质证书</a></li>
+                                <li><a href="about-callme.html">联系我们</a></li>
+                            </ul>
+                        </li>
+                        <!--新闻中心-->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                新闻中心 <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="news-qiyenews.html">企业新闻</a></li>
+                                <li><a href="news-hangye.html">行业动态</a></li>
+                            </ul>
+                        </li>
+                        <!--服务平台-->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                服务平台 <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">客户登录</a></li>
+                                <li><a href="#">服务超市</a></li>
+                                <li><a href="#">产品研发动态</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+
+
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </div>
+</div>
+<!--广告图片-->
+<div class="container">
+    <div class="row">
+        <div class="header_bigimg">
+            <div id="particles" style="background: #3F70E0">
+
+                <div class="intro">
+
+                    <h1 style="text-align: center ;color: white">IOIO • 用心做事 <br> <span style="font-size: 12px;">我们是一群有梦想、有激情、有魄力的年轻人<br>
+            我们对人包容谦和，对事完美主义<br>
+            我们渴求热爱技术，热爱编程，热爱挑战的牛人</span></h1>
+
+                    <p style="text-align: center;margin-top: 40px;margin-bottom: 0 ;color: white">Here We Are Closer To The Dream </p>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="et-slider-wrapper-next"></div>
+    </div>
+</div>
+<!--中间的内容展示-->
+<div class="container container-main">
+    <div class="row">
+        <div class="mian_product">
+            <div class="col-sm-0 col-md-3 mian_product_display">
+                <div class="product_left">
+                    <div style="width: 200px;height: 42px;background: url(images/product_0-2.png) no-repeat left top"></div>
+                    <ul class="product_left_nav">
+                        <li><a href="#">OTO解决方案</a></li>
+                        <li><a href="#">零售分销方案</a></li>
+                        <li><a href="#">定制行业解决方案</a></li>
+                        <li><a href="#">客户关系管理解决方案</a></li>
+                        <li><a href="#">远程办公解决方案</a></li>
+                        <li style="padding-left: 0;"><span style="width: 100%;height: 3px;background: #ccc;display: inline-block ;"></span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-9">
+                <div class="product_right ">
+                    <h1 style="border-bottom: 1px dotted #ccc; font-size: 12px;height: 36px;line-height: 36px;padding-left: 5px">当前位置：<span><a href="#" style="font-size: 12px;height: 36px;line-height: 36px;">首页</a></span> > <span><a href="#" style="font-size: 12px;height: 36px;line-height: 36px;">产品</a></span> >零售分销方案</h1>
+                    <h1 style="color: #006699;font-size: 18px;line-height: 24px;font-weight: bold;text-align: center;margin-top: 10px"> 零售分销方案</h1>
+                    <p>连锁商业价值链是购买者驱动型的，即顾客决定着商品的设计与流动，决定着渠道的拓展，决定着品牌的定位与发展。同时也决定着连锁商业
+                        要想在未来的市场中取得较高盈利，就必须以客户为中心，建立快速的市场需求响应机制，让商品随需而动，让渠道随需而动，让门店随需而
+                        动。让对的商品在合适的时间，通过合适的渠道，快速流转到合适的门店，再以合适的价格，合适方式来服务对的顾客。
+                    </p>
+                    <div class="col-xs-12 col-md-12">
+                        <div  class="thumbnail">
+                            <img src="images/product_21.bmp" alt="">
+                        </div>
+                    </div>
+                    <!--<p style="color: #6699CC;font-size: 18px">产品功能</p>-->
+                    <p style="color: #FFA000;font-weight: bold">商品管理</p>
+                    <p style="margin-top: 0">商品企划无依据，根据经验拍脑袋，产品设计与市场需求不吻合，形成大量库存，无法对库存商品制定有效政策进行
+                        盘活，商品交期难以准确管理，错过上市期，流失销售时机
+                    </p>
+                    <p style="color: #FFA000;font-weight: bold">渠道管理</p>
+                    <p>代理商运营能力弱，需要有效的指导；代理商对总部的政策执行力差，难以对其重点零售进行准确管理；代理商经营多个品牌，管理难度大</p>
+                    <p style="color: #FFA000;font-weight: bold">终端零售管理</p>
+                    <p>营销手段单一，长年促销打折，损害品牌形象和企业利润；会员活跃度低，忠诚度低，销售贡献低；店长和导购能力水平参差不齐，缺乏有效的经营指导平台</p>
+                    <p style="color: darkblue;font-weight: bold">解决方案介绍</p>
+                    <p>通过商品企划、订货会、生产、仓储物流、渠道分销和终端零售六大业务管理进行信息化建设；还能满足时品牌运营商和代理商之间和谐共赢的
+                        需求转变，帮助企业建筑信息共享平台，快速响应市场，形成整体竞争优势；此外，更能从终端管理所面临的实际困难出发，以快速增长终端门
+                        店业绩与提升品牌形象为切入点，帮助企业建立门店精益、精细、精确的管理体系，实现终端的精确管理。
+                    </p>
+                    <div class="col-xs-12 col-md-12">
+                        <div  class="thumbnail">
+                            <img src="images/product_22.bmp" alt="">
+                        </div>
+                    </div>
+                    <p style="color: #FFA000;font-weight: bold">建立商品全局精细可视地图</p>
+                    <p>结合企业经营的业务模式和业务链特点，帮助时尚企业打造商品的全局精细可视化业务地图，即通过商品企划、订货会、生产、仓储物流、
+                        渠道分销和终端零售六大业务管理的信息化建设，实现企业能够快速查询到商品在全国市场的布局状况；实现企业实时管控商品流通过程
+                        中的信息流、物流和资金流；实现企业能够依据全面的业务历史信息及各个业务环节当下的现状信息反馈来及时调整商品的市场经营策略
+                        ，同时能够指引企业准确分析出市场将来变化趋势、果断决策把握住市场机会。
+                    </p>
+                    <p style="color: #FFA000;font-weight: bold">建立总部与代理商之间高效可控的协同平台</p>
+                    <p>为满品牌运营商和代理商之间和谐共赢的需求转变，零售分销解决方案帮助企业建立品牌商与代理商之间的信息共享平台，即通过建立总部
+                        与机构之间信息沟通的渠道，来支持企业对于单店业务加盟、单级多级代理商的渠道管理，以直营化管理模式帮助代理商建立自身的管理体
+                        系。而代理商通过与运营商直接的业务互动与信息共享，不但可以管理好终端门店销售与库存，还可以与总部协同快速响应市场，形成整体
+                        竞争优势。
+                    </p>
+                    <p style="color: #FFA000;font-weight: bold">建立门店精益、精细、精确的管理体系</p>
+                    <p>从终端管理所面临的实际困难出发，以快速增长终端门店业绩与提升品牌形象为切入点，帮助企业建立门店精益、精细、精确的管理体系。即
+                        通过信息化的手段，在店铺的拓展上引入店铺生命周期的管理模式，项目化PDCF运作和跟踪货品结构、销存、ROI等方式追求终端的精益管理；
+                        在店铺的日常运营业务上，通过系统清晰的业务流程导航及便捷的操作来实现门店日常工作的规范化、运营状况的透明化、销售技能知识化、
+                        店员管理人性化，从而达成门店的精细管理；在店铺经营数据的分析指导上，能够支持多维报表直观呈现，销售、库存、人员等各项绩效指标
+                        的实时查询分析，从而通过终端体系化的报表能够提升门店的分析应变能力，实现终端的精确管理。
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!--底部导航-->
+<div class="container container-footer">
+    <div class="row">
+        <div class="col-sm-12 col-md-3 text-center">
+            <h2>product</h2>
+            <ul>
+                <li><a href="#">this is a navbar</a></li>
+                <li><a href="#">this is a navbar</a></li>
+                <li><a href="#">this is a navbar</a></li>
+                <li><a href="#">this is a navbar</a></li>
+                <li><a href="#">this is a navbar</a></li>
+                <li><a href="#">this is a navbar</a></li>
+            </ul>
+
+        </div>
+        <div class="col-sm-12 col-md-3 text-center">
+            <h2>service</h2>
+            <ul>
+                <li><a href="#">this is a navbar</a></li>
+                <li><a href="#">this is a navbar</a></li>
+                <li><a href="#">this is a navbar</a></li>
+                <li><a href="#">this is a navbar</a></li>
+                <li><a href="#">this is a navbar</a></li>
+                <li><a href="#">this is a navbar</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-12 col-md-3 text-center">
+            <h2>two</h2>
+            <ul>
+                <li><a href="#">this is a navbar</a></li>
+                <li><a href="#">this is a navbar</a></li>
+                <li><a href="#">this is a navbar</a></li>
+                <li><a href="#">this is a navbar</a></li>
+                <li><a href="#">this is a navbar</a></li>
+                <li><a href="#">this is a navbar</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-12 col-md-3 text-center">
+            <h2>case</h2>
+            <ul>
+                <li><a href="#">this is a navbar</a></li>
+                <li><a href="#">this is a navbar</a></li>
+                <li><a href="#">this is a navbar</a></li>
+                <li><a href="#">this is a navbar</a></li>
+                <li><a href="#">this is a navbar</a></li>
+                <li><a href="#">this is a navbar</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+<!--底部移动端-->
+<div class="container container-footer-mob">
+    <div class="row warp">
+        <ul class="nav nav-pills nav-stacked container-footer-mob-ul" role="tablist">
+            <!--首页-->
+            <li class="active"><a href="#">首页</a></li>
+            <!--产品-->
+            <li class="">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    产品 <b class="caret"></b>
+                </a>
+                <ul class="menu_child">
+                    <li><a href="#">供应链平台</a></li>
+                    <li><a href="#">客户关系管理系统</a></li>
+                    <li><a href="#">汽车4S店业务系统</a></li>
+                    <li><a href="#">数据分析平台</a></li>
+                </ul>
+            </li>
+            <!--服务-->
+            <li class="">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    服务 <b class="caret"></b>
+                </a>
+                <ul class="menu_child">
+                    <li><a href="#">软件定制服务</a></li>
+                    <li><a href="#">IT支持与维护</a></li>
+                    <li><a href="#">IT专业服务</a></li>
+                    <li><a href="#">ERP实施与咨询服务</a></li>
+                    <li><a href="#">专业测试与性能支持服务</a></li>
+                </ul>
+            </li>
+            <!--解决方案-->
+            <li class="">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    解决方案 <b class="caret"></b>
+                </a>
+                <ul class="menu_child">
+                    <li><a href="#">OTO解决方案</a></li>
+                    <li><a href="#">零售分销方案</a></li>
+                    <li><a href="#">定制行业解决方案</a></li>
+                    <li><a href="#">客户关系管理解决方案</a></li>
+                    <li><a href="#">远程办公解决方案</a></li>
+                </ul>
+            </li>
+            <!--成功案例-->
+            <li class="">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    成功案例 <b class="caret"></b>
+                </a>
+                <ul class="menu_child">
+                    <li><a href="#">教育培训行业</a></li>
+                    <li><a href="#">供应链行业</a></li>
+                    <li><a href="#">传媒</a></li>
+                    <li><a href="#">商会</a></li>
+                    <li><a href="#">互联网行业</a></li>
+                    <li><a href="#">微信平台</a></li>
+                </ul>
+            </li>
+            <!--关于我们-->
+            <li class="">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    关于我们 <b class="caret"></b>
+                </a>
+                <ul class="menu_child">
+                    <li><a href="#">了解佑佑</a></li>
+                    <li><a href="#">合作伙伴</a></li>
+                    <li><a href="#">资质证书</a></li>
+                    <li><a href="#">联系我们</a></li>
+                </ul>
+            </li>
+            <!--新闻中心-->
+            <li class="">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    新闻中心 <b class="caret"></b>
+                </a>
+                <ul class="menu_child">
+                    <li><a href="#">企业新闻</a></li>
+                    <li><a href="#">行业动态</a></li>
+                </ul>
+            </li>
+            <!--服务平台-->
+            <li class="">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    服务平台 <b class="caret"></b>
+                </a>
+                <ul class="menu_child">
+                    <li><a href="#">客户登录</a></li>
+                    <li><a href="#">服务超市</a></li>
+                    <li><a href="#">产品研发动态</a></li>
+                </ul>
+            </li>
+
+
+        </ul>
+    </div>
+</div>
+<!--移动端底部导航条代码开始-->
+<script type="text/javascript">
+
+    $(function(){
+        $(".container-footer-mob-ul>li>a").click(function(){
+            $(this).nextAll().slideToggle()(400,function(){
+                //st
+            })
+        });
+
+
+    })
+</script>
+<!-- 代码 开始 -->
+<!--qq聊天代码部分begin-->
+<div class="izl-rmenu">
+    <a class="consult" target="_blank"><div class="phone" style="display:none;">021-60489399<br>15868881999 </div></a>
+    <a class="cart"><div class="pic"></div></a>
+    <a href="javascript:void(0)" class="btn_top" style="display: block;"></a>
+</div>
+
+<!--qq聊天代码部分end-->
+
+<script>
+    $(function() {
+        $(".btn_top").hide();
+        $(".btn_top").on("click",function(){
+            $('html, body').animate({scrollTop: 0},300);return false;
+        })
+        $(window).bind('scroll resize',function(){
+            if($(window).scrollTop()<=300){
+                $(".btn_top").hide();
+            }else{
+                $(".btn_top").show();
+            }
+        })
+    })
+    /*---------返回顶部 end----------*/
+</script>
+<!-- 代码 结束 -->
+<script type="text/javascript">
+
+    $(function () {
+
+        $(".demo1").bootstrapNews({
+
+            newsPerPage: 5,
+
+            autoplay: true,
+
+            pauseOnHover:true,
+
+            direction: 'up',
+
+            newsTickerInterval: 4000,
+
+            onToDo: function () {
+
+                //console.log(this);
+
+            }
+
+        });
+    });
+
+</script>
+</body>
+</html>

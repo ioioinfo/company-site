@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/style-top.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/gongyinglian.css"/>
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/jquery.bootstrap.newsbox.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!--广告部分的js引用-->
+    <script type='text/javascript' src='js/jquery.particleground.min.js'></script>
+    <script type='text/javascript' src='js/demo.js'></script>
+
+
+    <title>远程办公解决方案</title>
+    <style>
+        a{
+            list-style: none;
+        }
+        .container{
+            width: 100%;
+        }
+        .container-main{
+            max-width: 1024px;
+            background: white;
+        }
+        /*logo*/
+        .navbar-brand img{
+            width: 135px;
+            height: 50px;
+            /*margin-top: -15px;*/
+            margin-right:75px ;
+        }
+        /*头部导航部分*/
+        .navbar{
+            margin-bottom: 0;
+            background: white;
+            border-bottom: 2px solid #503875;
+            -moz-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4);
+            -webkit-box-shadow:0px 3px 5px rgba(0, 0, 0, 0.4);
+            box-shadow:0px 3px 5px rgba(0, 0, 0, 0.4);
+
+        }
+        .navbar-nav>li{
+            padding: 12px 10px;
+        }
+        /*移动端样式*/
+        #bs-example-navbar-collapse-1{
+            /*background: black;*/
+            max-height: 400px;
+        }
+        #bs-example-navbar-collapse-1 ul>li>ul>li{
+            height: 50px;
+        }
+        /*广告部分样式*/
+        .header_bigimg{
+            /*height: 300px;*/
+        }
+        /*中间内容部分*/
+        .thumbnail{
+            border: none;
+        }
+        /*底部导航*/
+        .container-footer{
+            background: black;
+            margin-top: 50px;
+        }
+        /*底部移动端*/
+        /*.container-footer-mob .nav-stacked li a{*/
+        /*color: black;*/
+        /*}*/
+        .container-footer-mob .nav-stacked>li>ul>li{
+            background: white;
+            height: 25px;
+            line-height: 25px;
+            padding-left: 40px;
+        }
+        .menu_child{
+            display: none;
+        }
+        /*.container-footer-mob .nav-stacked>li:hover .menu_child{*/
+        /*display: block;*/
+        /*}*/
+        .container-footer-mob-ul{
+            background: black;
+        }
+        .container-footer-mob-ul .nav-stacked li a{
+            color: white;
+        }
+        /*当屏幕尺寸小于=964px时轮播图片的样式*/
+        @media screen and (max-width: 964px){
+
+            /*移动端广告图片*/
+            .header_bigimg{
+                display: none;
+            }
+            .et-slider-wrapper-next{
+                width: 100%;
+                height: 199px;
+                background-image: url(images/bgc_1.jpg);
+                background-repeat: no-repeat;
+                background-size:cover;
+            }
+            .header_bigimg{
+                height: 200px;
+            }
+            .izl-rmenu {
+                display: none;
+            }
+
+            /*中间部分*/
+            .mian_product_display{
+                display: none;
+            }
+            .mian_product .product_right{
+                margin-left: 0;
+            }
+            /*底部移动端隐藏*/
+            .container-footer{
+                display: none;
+            }
+        }
+        /*当屏幕尺寸大于=964px时轮播图片的样式*/
+        @media screen and (min-width: 964px){
+            .dropdown-menu{
+                display: none;
+            }
+            .dropdown:hover .dropdown-menu{
+                display: block;
+            }
+            .container-footer-mob{
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<!--导航部分-->
+<div class="container">
+    <div class="row">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/logocaise.png" alt=""/></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <!--首页-->
+                        <li class="active"><a href="index.html">首页</a></li>
+                        <!--产品-->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                产品 <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="product-gongyinglianpingtai.html">供应链平台</a></li>
+                                <li><a href="product-dinghuohuixitong.html">订货会系统</a></li>
+                                <li><a href="product-dinghuohuixitong.html">客户关系管理系统</a></li>
+                                <li><a href="product-qiche4sdianyewuxitong.html">汽车4S店业务系统</a></li>
+                                <li><a href="product-shujufenxipingtai.html">数据分析平台</a></li>
+                            </ul>
+                        </li>
+                        <!--服务-->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                服务 <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="serve-RJDZ.html">软件定制服务</a></li>
+                                <li><a href="serve-ITzcyfw.html">IT支持与维护</a></li>
+                                <li><a href="serve-ITzyfw.html">IT专业服务</a></li>
+                                <li><a href="serve-ERP.html">ERP实施与咨询服务</a></li>
+                                <li><a href="serve-zycsyjnzc.html">专业测试与性能支持服务</a></li>
+                            </ul>
+                        </li>
+                        <!--解决方案-->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                解决方案 <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="solution-oto-solution.html">OTO解决方案</a></li>
+                                <li><a href="solution-lsfxfa.html">零售分销方案</a></li>
+                                <li><a href="solution-dzhyjjfa.html">定制行业解决方案</a></li>
+                                <li><a href="solution-khgxjjfa.html">客户关系管理解决方案</a></li>
+                                <li><a href="solution-ycbgjjfa.html">远程办公解决方案</a></li>
+                            </ul>
+                        </li>
+                        <!--成功案例-->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                成功案例 <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="successful-jiaoyu.html">教育培训行业</a></li>
+                                <li><a href="successful-gongyinglian.html">供应链行业</a></li>
+                                <li><a href="successful-media.html">传媒</a></li>
+                                <li><a href="successful-chamber.html">商会</a></li>
+                                <li><a href="successful-internet.html">互联网行业</a></li>
+                                <li><a href="successful-weixin.html">微信平台</a></li>
+                            </ul>
+                        </li>
+                        <!--关于我们-->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                关于我们 <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="about-liaojieioio.html">了解佑佑</a></li>
+                                <li><a href="about-panter.html">合作伙伴</a></li>
+                                <li><a href="about-certificate.html">资质证书</a></li>
+                                <li><a href="about-callme.html">联系我们</a></li>
+                            </ul>
+                        </li>
+                        <!--新闻中心-->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                新闻中心 <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="news-qiyenews.html">企业新闻</a></li>
+                                <li><a href="news-hangye.html">行业动态</a></li>
+                            </ul>
+                        </li>
+                        <!--服务平台-->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                服务平台 <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">客户登录</a></li>
+                                <li><a href="#">服务超市</a></li>
+                                <li><a href="#">产品研发动态</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+
+
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </div>
+</div>
+<!--广告图片-->
+<div class="container">
+    <div class="row">
+        <div class="header_bigimg">
+            <div id="particles" style="background: #3F70E0">
+
+                <div class="intro">
+
+                    <h1 style="text-align: center ;color: white">IOIO • 用心做事 <br> <span style="font-size: 12px;">我们是一群有梦想、有激情、有魄力的年轻人<br>
+            我们对人包容谦和，对事完美主义<br>
+            我们渴求热爱技术，热爱编程，热爱挑战的牛人</span></h1>
+
+                    <p style="text-align: center;margin-top: 40px;margin-bottom: 0 ;color: white">Here We Are Closer To The Dream </p>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="et-slider-wrapper-next"></div>
+    </div>
+</div>
+<!--中间的内容展示-->
+<div class="container container-main">
+    <div class="row">
+        <div class="mian_product">
+            <div class="col-sm-0 col-md-3 mian_product_display">
+                <div class="product_left">
+                    <div style="width: 200px;height: 42px;background: url(images/product_0-2.png) no-repeat left top"></div>
+                    <ul class="product_left_nav">
+                        <li><a href="#">OTO解决方案</a></li>
+                        <li><a href="#">零售分销方案</a></li>
+                        <li><a href="#">定制行业解决方案</a></li>
+                        <li><a href="#">客户关系管理解决方案</a></li>
+                        <li><a href="#">远程办公解决方案</a></li>
+                        <li style="padding-left: 0;"><span style="width: 100%;height: 3px;background: #ccc;display: inline-block ;"></span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-9">
+                <div class="product_right ">
+                    <h1 style="border-bottom: 1px dotted #ccc; font-size: 12px;height: 36px;line-height: 36px;padding-left: 5px">当前位置：<span><a href="#" style="font-size: 12px;height: 36px;line-height: 36px;color: #0088D5">首页</a></span> > <span><a href="#" style="font-size: 12px;height: 36px;line-height: 36px;color:#0088D5">解决方案</a></span> >客户关系管理解决方案</h1>
+                    <h1 style="color: #006699;font-size: 18px;line-height: 24px;font-weight: bold;text-align: center;margin-top: 10px">远程办公解决方案</h1>
+                    <p>随着企业信息化建设的深入发展，信息化办公系统如:OA系统、CRM系统、ERP系统、仓储物流系统等已成为企业办公不可缺少的工具。一方面，
+                        更多企业走上国际化道路，分支机构、合作伙伴遍布全球，不同地区、不同时区的大量业务往来，使异地办公方式大行其道；伴随而来的人员
+                        频繁外出、出差，使得人们对移动通讯、移动办公的呼声越来越高。另一方面，为精简机构、提高工作效率、降低办公成本，越来越多的企业
+                        开始选择让员工在家办公。移动互联网的迅速发展，4G/WiFi等无线网络的大面积覆盖。智能手机、平板电脑的广泛使用，推动了移动办公的普及。
+
+
+                    </p>
+                    <div class="col-xs-12 col-md-12">
+                        <div  class="thumbnail">
+                            <img src="images/product_24.bmp" alt="">
+                        </div>
+                    </div>
+                    <p>企业的分支机构、办事处、连锁店等企业扩大经营,面对办公地点增多，企业员工分布广移动性大频繁往返于客户，销售卖场与公司之间，需要一
+                        种便捷、灵活和具有跨地域性的办公方案，使员工无论身在何处，都能实现员工与员工之间，企业与业务伙伴之间的相互交流和沟通。希望通过
+                        移动办公的方式提高办公效率，降低管理成本，提升服务质量。
+
+                    </p>
+                    <!--<p style="color: #6699CC;font-size: 18px">软件开发流程</p>-->
+                    <p style="color: #0088D5;font-weight: bold">分析需求：</p>
+                    <p style="margin-top: 0">1、市场人员遍布全国各地，没有固定的办公场所，每次访问内部系统的终端和网络不同，没有局域网环境，而无法及时使用CRM来更新客户信息，也无法利用OA系统来实现办公自动化。
+                        <br/>
+                        2、公司领导经常出差办公，火车站、飞机场等地方，随时需要查看、调用、审批内部的资料文档，并知道业务进展及生产线的进度，需要随时随地都能访问内部办公系统及生产管理系统的解决方案。
+                        <br/>
+                        3、连锁机构人员驻点调查巡查信息、各分区销售点的数据采集等，需要有一种方式可以即时将采集到的重要信息及时传达给企业内部系统。
+                        <br/>
+                        4、突发和意外情况，能在事件发生的最短时间内上报、传达给企业内部的相关人员,相关人员和领导层能不受地点的限制，快速及时对突发和意外情况作出指示和决定。
+                        <br/>
+                        5、随时随地办公,通过公网访问企业内部核心信息资源，就面临着非法访问、信息窃取等外部的安全威胁，就必须有相应信息安全策略，在严格防止企业信息资源被非法窃取的同时，对合法的访问要提供方便。
+                    </p>
+                    <div class="col-xs-12 col-md-12">
+                        <div  class="thumbnail">
+                            <img src="images/product_25.bmp" alt="">
+                        </div>
+                    </div>
+                    <p style="color:  #0088D5;font-weight: bold">解决方案：</p>
+                    <p>远程移动办公解决方案是将企业现有OA系统、CRM系统、ERP系统、仓储物流系统等企业现有的办公及生产管理系统等通过云接入管理平台无缝并安全的延伸到智能手机、
+                        平板电脑等移动终端。只需要把移动云设备和iserver服务器部署在企业现有IT网络中，企业人员非办公室内通过手机、平板电脑就可以像在普通PC前一样的办公。
+                    </p>
+                    <div class="col-xs-12 col-md-12">
+                        <div  class="thumbnail">
+                            <img src="images/product_26.bmp" alt="">
+                        </div>
+                    </div>
+                    <p style="color: #FFA000;font-weight: bold">此方案能实现以下功能</p>
+                    <p>
+                        1、移动公文处理：实现手机、平板电脑进行通知公告、转批、催办、公文查阅、审批、用车申请、电子签章、流转等，只要是企业原有OA系统在手机和平板电脑上都能实现移动OA
+                        <br/>
+                        2、移动生产流程管理：采购信息、生产进度、备料情况、库存、出货情况等企业原有ERP系统在手机和平板电脑上都能实现移动ERP
+                        <br/>
+                        3、移动电子邮箱：登录、查收、回复邮件及时了解企业及业务进展。
+                        <br/>
+                        4、实时展现: 在手机上实现公告通知、通讯录查询、日程安排等。
+                        <br/>
+                        5、移动信息采集：各分点，分支机构订单、客户等信息及时采集入库。
+                        <br/>
+                        6、其它移动功能：会议管理、出差管理、费用报销等，可以按照客户要求适配到手机终端进行展现和操作 。
+                    </p>
+                    <p style="color: #0088D5;font-weight: bold">方案特点：</p>
+                    <p style="color: #FFA000;font-weight: bold">灵活、方便的网络应用体系</p>
+                    <p>方案使用公有云或私有云联合部署模式与互联网应用技术（Internet/Extranet）于一身，支持离线操作，在线时自动同步信息，用户不必一直连接企业服务器，
+                        也不必一直在线，工作可以随时暂停，随时恢复；同时支持纯局域网连接以及基于宽带或无线方式的Internet 连接，用户无需购置昂贵、复杂的高档服务器，
+                        无需以高昂费用架设专网或虚拟局域网（VPN），直接使用公网（Internet）的即可安装使用，并保证了信息传输的安全性，更保持了高度的灵活性，适合"在
+                        家办公"、"异地办公"与"移动办公"的实际需求。
+                    </p>
+                    <p style="color: #FFA000;font-weight: bold">全面降低系统的综合应用成本</p>
+                    <p>除了可以省却架设专网或VPN的费用外，通过"对等网络"技术的应用，大大降低了对服务器运算能力的要求、网络存储器以及网络带宽的要求。此外系统的大部
+                        分功能都可支持离线操作，可以大大降低用户对网络的依赖，为用户节约了大量的成本。      此外，本方案以Windows为基本客户端工作环境，Linux为服务
+                        器操作平台，直接使用点击科技自行开发的"竞开协同应用平台"作为基础平台，从而使用户无需额外购买网络操作系统、数据库管理系统以及其他的应用平台
+                        软件，由于不存在"隐性成本"，从而使得用户的综合应用成本大大降低。
+                    </p>
+                    <p style="color: #FFA000;font-weight: bold">系统可扩展性与渐进式信息化</p>
+                    <p>可以与各种桌面办公软件（如Office套件等）配合使用，也可以通过内建的浏览器与各种B/S结构的应用软件结合，最大限度地保持原有的工作习惯，保护原来的
+                        投资。此外，通过相应的开发工具，用户可以得到更多的与现有软件的兼容接口，以及各种业务应用系统的插件，本方案可以扩展成一个更加全面的、面向企业
+                        信息化的协同管理、协同教育等综合性协同应用解决方案，实现"渐进式信息化"的策略，从而保证现有的投资也将得到有力的保护。
+                    </p>
+                    <p style="color:#FFA000;font-weight: bold">全面、可靠的信息安全性</p>
+                    <p>使用了先进的存储安全、传输安全与身份安全技术，与其他成熟的防病毒软件与网络防火墙产品结合，可以形成全面的信息安全体系，并解决了在远程办公情况下，
+                        由于分布式工作环境的而带来的新的信息安全难题。其中存放在用户电脑上的数据经过严格的存储加密处理，有效防止任何未授权的访问，信息的传输也实现了自
+                        动加密和严格保护，防止数据在传输过程中的泄密，通过采用先进的公开密钥和数字签名技术，实现数据防伪、身份认证与定向收发功能，保证综合通讯、信息协
+                        同、工作流管理与其他网络办公功能的正确实施。此外，采用了平台化、系统化、结构化的设计，各应用模块采用插件式安装方式，最大限度保证应用系统与基础
+                        平台的可靠与稳定。
+
+                    </p>
+                    <p style="color:#FFA000;font-weight: bold">简单易用的系统操作</p>
+                    <p>
+                        不用改变现有任何IT网络结构， 支持苹果iOS ,iPad/iPhone, Android系统，LeOS, OPhone OS,windows mobile各种手机操作系统，可实现网络自动升级与配置，
+                        系统界面风格统一，内建模块与各种插件式应用模块融为一体，共同集成为一个统一的、高度个性化的、一站式的综合操作环境，易学易用，维护方便。
+                    </p>
+
+                    <p style="color:#FFA000;font-weight: bold">信息关联与复用 </p>
+                    <p>
+                        系统应用了知识管理的思想，实现了人员协作、数据关联、流程衔接与应用整合为核心的协同应用，文档、即时通讯交互的信息记录、协同工作区交换的各种资料、
+                        系统生成的效率手册、记事报告以及通过其他途径得到的数据资料，实现各个应用功能与数据库之间的高度协同。同时通过深度挖掘，实现信息的高度关联与交叉
+                        应用，减少数据重复输入，实现信息同步更新，以对信息进行系统的优化管理。
+                    </p>
+                    <p style="color:#FFA000;font-weight: bold">信息中转和自动发送</p>
+                    <p>
+                        在线时自动同步信息的功能，大大减轻用户操作负担。云端服务器可以实现用户管理、信息中转等功能，确保网络环境不同的各地办公室之间信息的到达，全面提
+                        升系统的可靠性、工作性能与可管理性。
+                    </p>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!--底部导航-->
+<div class="container container-footer">
+    <div class="row">
+        <div class="col-sm-12 col-md-3 text-center">
+            <h2>product</h2>
+            <ul>
+                <li><a href="#">this is a navbar</a></li>
+                <li><a href="#">this is a navbar</a></li>
+                <li><a href="#">this is a navbar</a></li>
+                <li><a href="#">this is a navbar</a></li>
+                <li><a href="#">this is a navbar</a></li>
+                <li><a href="#">this is a navbar</a></li>
+            </ul>
+
+        </div>
+        <div class="col-sm-12 col-md-3 text-center">
+            <h2>service</h2>
+            <ul>
+                <li><a href="#">this is a navbar</a></li>
+                <li><a href="#">this is a navbar</a></li>
+                <li><a href="#">this is a navbar</a></li>
+                <li><a href="#">this is a navbar</a></li>
+                <li><a href="#">this is a navbar</a></li>
+                <li><a href="#">this is a navbar</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-12 col-md-3 text-center">
+            <h2>two</h2>
+            <ul>
+                <li><a href="#">this is a navbar</a></li>
+                <li><a href="#">this is a navbar</a></li>
+                <li><a href="#">this is a navbar</a></li>
+                <li><a href="#">this is a navbar</a></li>
+                <li><a href="#">this is a navbar</a></li>
+                <li><a href="#">this is a navbar</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-12 col-md-3 text-center">
+            <h2>case</h2>
+            <ul>
+                <li><a href="#">this is a navbar</a></li>
+                <li><a href="#">this is a navbar</a></li>
+                <li><a href="#">this is a navbar</a></li>
+                <li><a href="#">this is a navbar</a></li>
+                <li><a href="#">this is a navbar</a></li>
+                <li><a href="#">this is a navbar</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+<!--底部移动端-->
+<div class="container container-footer-mob">
+    <div class="row warp">
+        <ul class="nav nav-pills nav-stacked container-footer-mob-ul" role="tablist">
+            <!--首页-->
+            <li class="active"><a href="#">首页</a></li>
+            <!--产品-->
+            <li class="">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    产品 <b class="caret"></b>
+                </a>
+                <ul class="menu_child">
+                    <li><a href="#">供应链平台</a></li>
+                    <li><a href="#">客户关系管理系统</a></li>
+                    <li><a href="#">汽车4S店业务系统</a></li>
+                    <li><a href="#">数据分析平台</a></li>
+                </ul>
+            </li>
+            <!--服务-->
+            <li class="">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    服务 <b class="caret"></b>
+                </a>
+                <ul class="menu_child">
+                    <li><a href="#">软件定制服务</a></li>
+                    <li><a href="#">IT支持与维护</a></li>
+                    <li><a href="#">IT专业服务</a></li>
+                    <li><a href="#">ERP实施与咨询服务</a></li>
+                    <li><a href="#">专业测试与性能支持服务</a></li>
+                </ul>
+            </li>
+            <!--解决方案-->
+            <li class="">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    解决方案 <b class="caret"></b>
+                </a>
+                <ul class="menu_child">
+                    <li><a href="#">OTO解决方案</a></li>
+                    <li><a href="#">零售分销方案</a></li>
+                    <li><a href="#">定制行业解决方案</a></li>
+                    <li><a href="#">客户关系管理解决方案</a></li>
+                    <li><a href="#">远程办公解决方案</a></li>
+                </ul>
+            </li>
+            <!--成功案例-->
+            <li class="">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    成功案例 <b class="caret"></b>
+                </a>
+                <ul class="menu_child">
+                    <li><a href="#">教育培训行业</a></li>
+                    <li><a href="#">供应链行业</a></li>
+                    <li><a href="#">传媒</a></li>
+                    <li><a href="#">商会</a></li>
+                    <li><a href="#">互联网行业</a></li>
+                    <li><a href="#">微信平台</a></li>
+                </ul>
+            </li>
+            <!--关于我们-->
+            <li class="">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    关于我们 <b class="caret"></b>
+                </a>
+                <ul class="menu_child">
+                    <li><a href="#">了解佑佑</a></li>
+                    <li><a href="#">合作伙伴</a></li>
+                    <li><a href="#">资质证书</a></li>
+                    <li><a href="#">联系我们</a></li>
+                </ul>
+            </li>
+            <!--新闻中心-->
+            <li class="">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    新闻中心 <b class="caret"></b>
+                </a>
+                <ul class="menu_child">
+                    <li><a href="#">企业新闻</a></li>
+                    <li><a href="#">行业动态</a></li>
+                </ul>
+            </li>
+            <!--服务平台-->
+            <li class="">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    服务平台 <b class="caret"></b>
+                </a>
+                <ul class="menu_child">
+                    <li><a href="#">客户登录</a></li>
+                    <li><a href="#">服务超市</a></li>
+                    <li><a href="#">产品研发动态</a></li>
+                </ul>
+            </li>
+
+
+        </ul>
+    </div>
+</div>
+<!--移动端底部导航条代码开始-->
+<script type="text/javascript">
+
+    $(function(){
+        $(".container-footer-mob-ul>li>a").click(function(){
+            $(this).nextAll().slideToggle()(400,function(){
+                //st
+            })
+        });
+
+
+    })
+</script>
+<!-- 代码 开始 -->
+<!--qq聊天代码部分begin-->
+<div class="izl-rmenu">
+    <a class="consult" target="_blank"><div class="phone" style="display:none;">021-60489399<br>15868881999 </div></a>
+    <a class="cart"><div class="pic"></div></a>
+    <a href="javascript:void(0)" class="btn_top" style="display: block;"></a>
+</div>
+
+<!--qq聊天代码部分end-->
+
+<script>
+    $(function() {
+        $(".btn_top").hide();
+        $(".btn_top").on("click",function(){
+            $('html, body').animate({scrollTop: 0},300);return false;
+        })
+        $(window).bind('scroll resize',function(){
+            if($(window).scrollTop()<=300){
+                $(".btn_top").hide();
+            }else{
+                $(".btn_top").show();
+            }
+        })
+    })
+    /*---------返回顶部 end----------*/
+</script>
+<!-- 代码 结束 -->
+<script type="text/javascript">
+
+    $(function () {
+
+        $(".demo1").bootstrapNews({
+
+            newsPerPage: 5,
+
+            autoplay: true,
+
+            pauseOnHover:true,
+
+            direction: 'up',
+
+            newsTickerInterval: 4000,
+
+            onToDo: function () {
+
+                //console.log(this);
+
+            }
+
+        });
+    });
+
+</script>
+</body>
+</html>
