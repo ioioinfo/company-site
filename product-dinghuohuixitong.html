@@ -64,10 +64,32 @@
         .thumbnail{
             border: none;
         }
-        /*底部导航*/
+        /*底部  导航*/
         .container-footer{
-            background: black;
+            background: #272727;
             margin-top: 50px;
+        }
+        .container-footer .container-footer-ul li a{
+          text-decoration: none;
+          color:#ccc;
+          font-weight: bold;
+          font-size: 12px;
+        }
+        .container-footer .container-footer-ul li a:hover, a:focus{
+          text-decoration: underline;
+        }
+        .container-footer .container-footer-ul li{
+          line-height: 36px;
+          padding-left:50px;
+        }
+        .container-footer .row>div{
+          padding: 0;
+        }
+        .container-footer .row h3{
+          padding-left:50px;
+          color:#ccc;
+          font-weight: bold;
+              font-size: 16px;
         }
         /*底   部   移动   端  样   式*/
 
@@ -229,10 +251,27 @@
             -webkit-transition: all 0s ease-in-out;
             -moz-transition: all 0s ease-in-out;
             -o-transition: all 0s ease-in-out;
-            transition: all 0s ease-in-out;
+            transition:  all 0s ease-in-out;
 
         }
         }
+        @media screen and (max-width: 1118px) and (min-width:768px){
+          .navbar-nav>li{
+            padding: 0;
+          }
+          .navbar-nav>li>a{
+            padding: 15px 5px;
+          }
+          .navbar-brand img{
+            margin-right: 5px;
+          }
+            }
+            @media screen and (max-width: 1118px) and (min-width:964px){
+              .navbar img{
+                margin-top: -15px;
+              }
+            }
+
     </style>
 </head>
 
@@ -353,11 +392,11 @@
         </nav>
     </div>
 </div>
-<!--广告图片-->
+<!--广告 图片-->
 <div class="container">
     <div class="row">
         <div class="header_bigimg">
-            <div id="particles" style="background: #3F70E0">
+            <div id="particles" style="background: #303841">
 
                 <div class="intro">
 
@@ -460,51 +499,49 @@
 <!--底部导航-->
 <div class="container container-footer">
     <div class="row">
-        <div class="col-sm-12 col-md-3 text-center">
-            <h2>product</h2>
-            <ul>
-                <li><a href="#">this is a navbar</a></li>
-                <li><a href="#">this is a navbar</a></li>
-                <li><a href="#">this is a navbar</a></li>
-                <li><a href="#">this is a navbar</a></li>
-                <li><a href="#">this is a navbar</a></li>
-                <li><a href="#">this is a navbar</a></li>
+        <div class="col-sm-12 col-md-3 ">
+            <h3 class="">服务</h3>
+            <ul class="container-footer-ul">
+              <li><a href="serve-RJDZ.html">软件定制服务</a></li>
+              <li><a href="serve-ITzcyfw.html">IT支持与维护</a></li>
+              <li><a href="serve-ITzyfw.html">IT专业服务</a></li>
+              <li><a href="serve-ERP.html">ERP实施与咨询服务</a></li>
+              <li><a href="serve-zycsyjnzc.html">专业测试与性能支持服务</a></li>
             </ul>
+        </div>
+        <div class="col-sm-12 col-md-3">
+            <h3 class="">解决方案</h3>
+            <ul class="container-footer-ul">
+              <li><a href="solution-oto-solution.html">OTO解决方案</a></li>
+              <li><a href="solution-lsfxfa.html">零售分销方案</a></li>
+              <li><a href="solution-dzhyjjfa.html">定制行业解决方案</a></li>
+              <li><a href="solution-khgxjjfa.html">客户关系管理解决方案</a></li>
+              <li><a href="solution-ycbgjjfa.html">远程办公解决方案</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-12 col-md-3">
+            <h3 class="">成功案例</h3>
+            <ul class="container-footer-ul">
+              <li><a href="successful-jiaoyu.html">教育培训行业</a></li>
+              <li><a href="successful-gongyinglian.html">供应链行业</a></li>
+              <li><a href="successful-media.html">传媒</a></li>
+              <li><a href="successful-chamber.html">商会</a></li>
+              <li><a href="successful-internet.html">互联网行业</a></li>
+              <li><a href="successful-weixin.html">微信平台</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-12 col-md-3">
+            <h3 class="">关于我们</h3>
+            <ul class="container-footer-ul">
+              <li><a href="about-liaojieioio.html">了解佑佑</a></li>
+              <li><a href="about-panter.html">合作伙伴</a></li>
+              <li><a href="about-certificate.html">资质证书</a></li>
+              <li><a href="about-callme.html">联系我们</a></li>
+            </ul>
+        </div>
 
-        </div>
-        <div class="col-sm-12 col-md-3 text-center">
-            <h2>service</h2>
-            <ul>
-                <li><a href="#">this is a navbar</a></li>
-                <li><a href="#">this is a navbar</a></li>
-                <li><a href="#">this is a navbar</a></li>
-                <li><a href="#">this is a navbar</a></li>
-                <li><a href="#">this is a navbar</a></li>
-                <li><a href="#">this is a navbar</a></li>
-            </ul>
-        </div>
-        <div class="col-sm-12 col-md-3 text-center">
-            <h2>two</h2>
-            <ul>
-                <li><a href="#">this is a navbar</a></li>
-                <li><a href="#">this is a navbar</a></li>
-                <li><a href="#">this is a navbar</a></li>
-                <li><a href="#">this is a navbar</a></li>
-                <li><a href="#">this is a navbar</a></li>
-                <li><a href="#">this is a navbar</a></li>
-            </ul>
-        </div>
-        <div class="col-sm-12 col-md-3 text-center">
-            <h2>case</h2>
-            <ul>
-                <li><a href="#">this is a navbar</a></li>
-                <li><a href="#">this is a navbar</a></li>
-                <li><a href="#">this is a navbar</a></li>
-                <li><a href="#">this is a navbar</a></li>
-                <li><a href="#">this is a navbar</a></li>
-                <li><a href="#">this is a navbar</a></li>
-            </ul>
-        </div>
+
+
 
     </div>
 </div>
