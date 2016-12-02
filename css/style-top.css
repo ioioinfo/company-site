@@ -51,7 +51,7 @@
     padding-left: 48px;
 }
 .izl-rmenu a.cart:hover .pic{display:block;}
-.izl-rmenu .btn_top {
+/*.izl-rmenu .btn_top {
     background-image: url(../images/float_top.gif);
     background-repeat: no-repeat;
     background-position: center top;
@@ -62,12 +62,12 @@
     -moz-transition: all 0s ease-in-out;
     -o-transition: all 0s ease-in-out;
     transition: all 0s ease-in-out;
-}
-.izl-rmenu .btn_top:hover {
+}*/
+/*.izl-rmenu .btn_top:hover {
     background-image: url(../images/float_top.gif);
     background-repeat: no-repeat;
     background-position: center bottom;
-}
+}*/
 .izl-rmenu .cart .pic {
     display:none;
     position: absolute;

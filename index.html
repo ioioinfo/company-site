@@ -32,7 +32,7 @@
         .navbar-brand img{
             width: 135px;
             height: 50px;
-            margin-top: -15px;
+            /*margin-top: -15px;*/
             margin-right:75px ;
         }
         /*头部导航部分*/
@@ -174,14 +174,9 @@
             background: black;
             margin-top: 50px;
         }
-        /*底部移动端*/
-        /*.container-footer-mob .nav-stacked li a{*/
-            /*color: black;*/
-        /*}*/
+        /*底   部   移动   端  样   式*/
+
         .menu {
-            /*border: #bdd7f2 1px solid;*/
-            /*border-top: #0080c4 4px solid;*/
-            /*border-bottom: #0080c4 4px solid;*/
 
             margin-bottom: 0;
             /*margin-left: 10px;*/
@@ -253,11 +248,39 @@
             border-top: 1px solid #535353;
             line-height: 106px;
         }
+        .container-buttom-margin{
+            margin: 0;
+        }
+
+        /*去 掉 点 击 出  的 虚 线*/
+        a:hover, a:active, a:focus {
+            outline: none;
+        }
+
         /*当屏幕尺寸小于=964px时轮播图片的样式*/
         @media screen and (max-width: 964px){
 
             h1{
                 font-size: 20px;
+            }
+            .izl-rmenu .consult{
+              display: none;
+            }
+            .izl-rmenu .cart {
+              display: none;
+            }
+            .izl-rmenu .btn_top {
+                background-image: url(images/TOP.png);
+                background-repeat: no-repeat;
+                background-position: center top;
+                display: block;
+                height: 39px;
+                width: 82px;
+                -webkit-transition: all 0s ease-in-out;
+                -moz-transition: all 0s ease-in-out;
+                -o-transition: all 0s ease-in-out;
+                transition: all 0s ease-in-out;
+
             }
         #et-slider-wrapper{
             display: none;
@@ -273,9 +296,9 @@
                 margin:0 auto;
                 text-align: center;
             }
-        .izl-rmenu {
+        /*.izl-rmenu  {
             display: none;
-        }
+        }*/
             .demo1 tr td:last-child{
                 display: none;
             }
@@ -288,6 +311,7 @@
                 /*background-color: transparent;*/
                 width: 0;
             }
+
             .container{
                 margin-top: 10px;
             }
@@ -305,9 +329,12 @@
                 display: block;
                 margin: 0;
             }
+            .navbar-brand img{
+               margin-top: -15px;
+            }
         }
         /*当屏幕尺寸大于=964px时轮播图片的样式*/
-        @media screen and (min-width: 964px){
+        @media screen and (min-width: 964px) {
             .dropdown-menu{
                 display: none;
             }
@@ -320,16 +347,39 @@
             .container-buttom-margin{
                 display: none;
             }
+            .izl-rmenu .btn_top {
+                background-image: url(images/float_top.gif);
+                background-repeat: no-repeat;
+                background-position: center top;
+                display: block;
+                height: 39px;
+                width: 82px;
+                -webkit-transition: all 0s ease-in-out;
+                -moz-transition: all 0s ease-in-out;
+                -o-transition: all 0s ease-in-out;
+                transition: all 0s ease-in-out;
+
+            }
         }
 
 
+        @media screen and (max-width: 1118px) and (min-width:768px){
+          .navbar-nav>li{
+            padding: 0;
+          }
+          .navbar-nav>li>a{
+            padding: 15px 3px;
+          }
+          .navbar-brand img{
+            margin-right: 0;
+          }
+            @media screen and (max-width: 1118px) and (min-width:964px){
+              .navbar img{
+                margin-top: -15px;
+              }
+            }
+        }
 
-        .container-buttom-margin{
-            margin: 0;
-        }
-        a:hover, a:active, a:focus {
-            outline: none;
-        }
 
     </style>
 </head>
@@ -892,7 +942,7 @@
                     <ul class="dropdown-menu">
                         <li><a href="product-gongyinglianpingtai.html">供应链平台</a></li>
                         <li><a href="product-dinghuohuixitong.html">订货会系统</a></li>
-                        <li><a href="product-dinghuohuixitong.html">客户关系管理系统</a></li>
+                        <li><a href="product-kehuguanxi.html">客户关系管理系统</a></li>
                         <li><a href="product-qiche4sdianyewuxitong.html">汽车4S店业务系统</a></li>
                         <li><a href="product-shujufenxipingtai.html">数据分析平台</a></li>
                     </ul>
@@ -965,7 +1015,7 @@
                         服务平台 <b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">客户登录</a></li>
+                        <li><a href="serve-platform-enter.html">客户登录</a></li>
                         <li><a href="#">服务超市</a></li>
                         <li><a href="#">产品研发动态</a></li>
                     </ul>
@@ -998,7 +1048,7 @@
                     <ul class="menuList">
                         <li><a href="product-gongyinglianpingtai.html">供应链平台</a></li>
                         <li><a href="product-dinghuohuixitong.html">订货会系统</a></li>
-                        <li><a href="product-dinghuohuixitong.html">客户关系管理系统</a></li>
+                        <li><a href="product-kehuguanxi.html">客户关系管理系统</a></li>
                         <li><a href="product-qiche4sdianyewuxitong.html">汽车4S店业务系统</a></li>
                         <li><a href="product-shujufenxipingtai.html">数据分析平台</a></li>
                     </ul>
@@ -1082,7 +1132,7 @@
                     </span>
 
                     <ul class="menuList">
-                        <li><a href="#">客户登录</a></li>
+                        <li><a href="serve-platform-enter.html">客户登录</a></li>
                         <li><a href="#">服务超市</a></li>
                         <li><a href="#">产品研发动态</a></li>
                     </ul>
@@ -1106,7 +1156,7 @@
                     <span class="footer-span">联系我们</span>
 
                 </li>
-              
+
 
             </ul>
         </div>
