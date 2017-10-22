@@ -112,12 +112,12 @@ a{
   margin: 20px 0;
 }
 .parttwo_ioio_web_success_img_div{
-  width: 40%;
+  width: 110px;
   height: 90px;
   display: inline-block;
 }
 .parttwo_ioio_web_success_img_div img{
-  width: 100%;
+  height: 100%;
 }
 .parttwo_ioio_web_success_word{
   line-height: 1.7;
