@@ -117,7 +117,7 @@ a{
   display: inline-block;
 }
 .parttwo_ioio_web_success_img_div img{
-  height: 100%;
+  width: 100%;
 }
 .parttwo_ioio_web_success_word{
   line-height: 1.7;
