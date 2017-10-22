@@ -214,7 +214,7 @@ a{
 }
 #partsix_ioio_web{
   background: #fff;
-  margin: 35px auto;
+  margin: 35px auto 0;
   background: url(http://static.ioioinfo.com/images/ioio_back.jpg)no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
@@ -292,4 +292,11 @@ a{
 .top img{
     width: 35px;
     height: 35px;
+}
+.ioio_bottom{
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    background: #000;
+    color: #e8e8e8;
 }
